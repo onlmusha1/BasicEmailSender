@@ -28,7 +28,7 @@ namespace Email_Sender
 
         public void sendEmail(string body, string subject, string toEmail)
         {
-            this.mailMessage = new MailMessage("lovetrumpshate6969@gmail.com", toEmail, subject, body);
+            this.mailMessage = new MailMessage("", toEmail, subject, body);
             try
             {
                 this.emailClient.SendMailAsync(this.mailMessage);
